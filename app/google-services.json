@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "903281384487",
+    "project_id": "pcbuddybuilder",
+    "storage_bucket": "pcbuddybuilder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903281384487:android:6913667b949cdf9f33c202",
+        "android_client_info": {
+          "package_name": "com.example.pcbuddybuilder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkwNbJbdCrqa2FAZHeZVIUutt8f-nFvB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

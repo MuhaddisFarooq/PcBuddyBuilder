@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <View
+        android:id="@+id/upperSection"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFC300"
+        app:layout_constraintBottom_toBottomOf="@+id/guidelineHorizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/lowerSection"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineHorizontal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="81dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvAddNewMentor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="24dp"
+        android:text="Add Products"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack" />
+
+    <TextView
+        android:id="@+id/tvHelpUsExpand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="8dp"
+        android:text="Help Us Grow"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvAddNewMentor"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddNewMentor" />
+
+
+    <Button
+        android:id="@+id/btnUploadPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#FFC300"
+        android:drawableLeft="@drawable/sell_product"
+        android:text="Upload Product Image"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHelpUsExpand" />
+
+    <EditText
+        android:id="@+id/etMentorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Enter Name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddNewMentor" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Description"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/etMentorName"
+        app:layout_constraintStart_toStartOf="@+id/etMentorName"
+       />
+
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Price"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/etDescription"
+        app:layout_constraintStart_toStartOf="@+id/etDescription"
+         />
+
+
+    <EditText
+        android:id="@+id/qty"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Quantity"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/etPrice"
+        app:layout_constraintStart_toStartOf="@id/etPrice">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/vendor"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Vendor Name"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/qty"
+        app:layout_constraintStart_toStartOf="@id/qty">
+
+    </EditText>
+
+
+    <Button
+        android:id="@+id/buttonorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="88dp"
+        android:backgroundTint="#FFC300 "
+        android:fontFamily="@font/designer"
+        android:text="Add Stock"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toEndOf="@id/bottomNavigationView"
+        app:layout_constraintTop_toBottomOf="@id/vendor" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#FFC300"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

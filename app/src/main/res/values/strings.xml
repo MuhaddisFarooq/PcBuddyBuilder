@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PCBuddyBuilder</string>
+    <string name="tag">Empower Your Creativity</string>
+    <string name="button_start">Get Started</string>
+
+    <string-array name="user_roles">
+        <item>Admin</item>
+        <item>Vendor</item>
+        <item>Customer</item>
+    </string-array>
+
+    <string name="Home">Home</string>
+    <string name="Cart">Cart</string>
+    <string name="Product">Add</string>
+    <string name="Chat">Chat</string>
+    <string name="Profile">Profile</string>
+
+    <string name="price_format">$%1$.2f</string>
+
+</resources>
